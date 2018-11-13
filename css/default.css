@@ -1,0 +1,21 @@
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.pGrande {
+    font-family: Montserrat-Regular;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #888888;
+    margin: 0px;
+}
+
+.form-control {
+    border: 5px;
+}
