@@ -52,3 +52,9 @@
     right: 0;
     bottom: 0;
 }
+
+.btHorarios {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+}
