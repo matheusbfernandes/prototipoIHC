@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Clínicas na região</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navBg">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <a class="navbar-text text-white font-weight-bold" href="#">Consulta Online</a>
+    <div class="header-icons">
+        <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
+        <span class="linedivide1"></span>
+        <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <section class="p-t-1 p-b-1 flex-col-c-m">
+        <h2 class="l-texto t-center">
+            Clínicas em Lavras-MG
+        </h2>
+    </section>
+</div>
+
+<div class="input-group col-sm-4 centered">
+    <input name="data[search]" class="form-control border" id="search" type="text" placeholder="nome da clínica/doutor">
+    <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit"><i class="fs-12 fa fa-search" aria-hidden="true"></i></button>
+        </span>
+</div>
+
+<section class="bgwhite p-t-55 p-b-65">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3 p-b-50">
+                <div class="leftbar p-r-20 p-r-0-sm">
+                    <h4 class="m-text14 p-b-7">
+                        Filtros
+                    </h4>
+
+                    <ul class="p-b-54">
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">Cardiologista</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">cirurgião</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">clínico geral</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">Dentista</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">Dermatologista</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">Ginecoologista</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">Ortopedista</label>
+                            </div>
+                        </li>
+
+                        <li class="p-t-4">
+                            <div class="form-check">
+                                <label class="form-check-label"><input type="checkbox" class="form-check-input">Pediatra</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row justify-content-md-end">
+                    <span class="s-text8 p-t-5 p-b-5">
+                        Exibindo 1 – 12 dos 16 resultados
+                    </span>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário kkkkkkkkkkkkk kkkkk</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
+                        <div class="divClinicas border p-l-5 p-r-5 p-b-5 p-t-5">
+                            <a><img class="imageSize" src="img/oralforma.png"></a>
+                            <p><b>Nome:</b></p>
+                            <p>Oral Forma Clínica Odontológica</p>
+                            <p><b>Responsáveis:</b></p>
+                            <p>Dra. Joana Silva, Dr. João da Costa</p>
+                            <p><b>Especialidades:</b></p>
+                            <p>Dentisa, cirurgião dentário</p>
+                            <button class="btClinicas btn btn-primary size2 bo-rad-2 hov5 m-text3 trans-0-4 m-t-5">Abrir horários</button>
+                        </div>
+                    </div>
+
+                    <div class="pagination flex-m flex-w p-t-26">
+                        <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
+                        <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg6 p-t-5 p-b-5 p-l-5 p-r-5 navbar-fixed-bottom" id="footerBg">
+    <div class="t-center p-l-5 p-r-15">
+        <div class="t-center s-text8">
+            <p>Protótipo 1 de Interação Humano Computador</p>
+        </div>
+        <div class="t-center s-text8">
+            <p>Grupo 4</p>
+        </div>
+        <div class="t-center s-text8">
+            UFLA - 2018
+        </div>
+    </div>
+</footer>
+</body>
+</html>
