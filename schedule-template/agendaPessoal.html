@@ -9,109 +9,170 @@
     <link rel="stylesheet" type="text/css" href="../css/default.css">
     <link rel="stylesheet" type="text/css" href="../css/util.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../fonts/themify/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <link rel="stylesheet" type="text/css" href="../fonts/elegant-font/html-css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-
-
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+    <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <a class="navbar-brand"><img src="../img/logo.png"></a>
-        <span class="navbar-text text-white font-weight-bold">Consulta Online</span>
-        <div class="header-icons">
-            <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
-            <span class="linedivide1"></span>
-            <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navBg">
+    <a class="navbar-brand" href="#"><img src="../img/logo.png"></a>
+    <a class="navbar-text text-white font-weight-bold" href="#">Consulta Online</a>
+    <div class="header-icons">
+        <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
+        <span class="linedivide1"></span>
+        <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
+    </div>
+</nav>
 
-    <div class="cd-schedule loading">
-        <div class="timeline">
-            <ul>
-                <li><span>09:00</span></li>
-                <li><span>09:30</span></li>
-                <li><span>10:00</span></li>
-                <li><span>10:30</span></li>
-                <li><span>11:00</span></li>
-                <li><span>11:30</span></li>
-                <li><span>12:00</span></li>
-                <li><span>12:30</span></li>
-                <li><span>13:00</span></li>
-                <li><span>13:30</span></li>
-                <li><span>14:00</span></li>
-                <li><span>14:30</span></li>
-                <li><span>15:00</span></li>
-                <li><span>15:30</span></li>
-                <li><span>16:00</span></li>
-                <li><span>16:30</span></li>
-                <li><span>17:00</span></li>
-                <li><span>17:30</span></li>
-                <li><span>18:00</span></li>
-            </ul>
-        </div> <!-- .timeline -->
-
-        <div class="events">
-            <ul>
-                <li class="events-group">
-                    <div class="top-info"><span>Segunda-Feira</span></div><ul></ul>
-                </li>
-
-                <li class="events-group">
-                    <div class="top-info"><span>Terça-Feira</span></div><ul></ul>
-                <li class="events-group">
-                    <div class="top-info"><span>Quarta-Feira</span></div>
-                    <ul>
-                        <li class="single-event" data-start="10:30" data-end="11:00" data-content="event-yoga-1" data-event="event-1">
-                            <a href="#0">
-                                <em class="event-name">Consulta Dr. José</em>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="events-group">
-                    <div class="top-info"><span>Quinta-Feira</span></div><ul></ul>
-                </li>
-
-                <li class="events-group">
-                    <div class="top-info"><span>Sexta-Feira</span></div><ul></ul>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="event-modal">
-            <header class="header">
-                <div class="content">
-                    <span class="event-date"></span>
-                    <h3 class="event-name"></h3>
-                </div>
-
-                <div class="header-bg"></div>
-            </header>
-
-            <div class="body">
-                <div class="event-info"></div>
-                <div class="body-bg"></div>
+<div class="jumbotron">
+    <section class="p-t-1 p-b-1 flex-col-c-m">
+        <h2 class="l-texto t-center">
+            Agenda Pessoal
+        </h2>
+    </section>
+</div>
+<div class="container m-b-50 m-t-50">
+    <div class="pos-center">
+        <div class="container border">
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-1"><b>Horário</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-1"><b>Segunda</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-1"><b>Terça</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-1"><b>Quarta</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-1"><b>Quinta</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-1"><b>Sexta</b></p></div>
             </div>
-
-            <a href="#0" class="close">Close</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>7:00 - 8:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>8:00 - 9:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>9:00 - 10:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"><button id="myBtn" class="btClinicas btn btn-primary size1 bo-rad-2 hov5 m-text3 trans-0-4">Oral Forma</button></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>10:00 - 11:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>11:00 - 12:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>12:00 - 13:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>13:00 - 14:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>14:00 - 15:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>15:00 - 16:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center mb-2  mb-2"><b>16:00 - 17:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 border"><p class="text-center p-t-7 mb-2"><b>17:00 - 18:00</b></p></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+                <div class="col-xs-12 col-sm-2 border"></div>
+            </div>
         </div>
+    </div>
 
-        <div class="cover-layer"></div>
-    </div> <!-- .cd-schedule -->
-    <script src="js/modernizr.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script>
-        if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-    </script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
-    
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="col-xs-12">
+            <p class="text-center p-t-7 mb-2">
+                Oralforma Clínica Odontológica<br>
+                Endereço: Rua São Jão, nº60, Centro<br>
+                Telefone: (35)3222-XXXX<br><br>
+
+                Horário da Consulta: 9:00<br>
+                Dr. Francisco de Assis<br>
+                Valor da consulta: R$100,00<br>
+                Informação da Consulta: Tratamento de canal.<br>
+            </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Desmarcar consulta</button>
+      </div>
+      </div>
+    </div>
+    <script src="../js/modal.js"></script>
+</div>
+
+<footer class="bg6 p-t-5 p-b-5 p-l-5 p-r-5 navbar-fixed-bottom" style="margin-top: 140px" id="footerBg">
+    <div class="t-center p-l-5 p-r-15">
+        <div class="t-center s-text8">
+            <p>Protótipo 1 de Interação Humano Computador</p>
+        </div>
+        <div class="t-center s-text8">
+            <p>Grupo 4</p>
+        </div>
+        <div class="t-center s-text8">
+            UFLA - 2018
+        </div>
+    </div>
+</footer>
 </body>
 </html>
-
