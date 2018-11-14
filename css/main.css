@@ -1959,17 +1959,17 @@ li.sale-noti > a {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid #eeeeee;
+  border: 1px solid #dee2e6;
   margin: 6px;
 }
 
 .item-pagination:hover {
-  background-color: #222222;
+  background-color: #dee2e6;
   color: white;
 }
 
 .active-pagination {
-  background-color: #222222;
+  background-color: #9b9ea1;
   color: white;
 }
 

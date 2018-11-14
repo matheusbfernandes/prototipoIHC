@@ -9,7 +9,7 @@
 }
 
 .pGrande {
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, serif;
     font-size: 22px;
     line-height: 1.7;
     color: #888888;
@@ -32,4 +32,23 @@
 
 #footerBg {
     background: #e9ecef;
+}
+
+.imageSize {
+    height: 30px;
+    width: 224px;
+}
+
+.divClinicas {
+    width: 237px;
+    max-width:237px; /* or whatever width you want. */
+    height: 320px;
+    position: relative;
+    max-height: 328px;
+}
+
+.btClinicas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
