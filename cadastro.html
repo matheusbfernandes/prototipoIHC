@@ -16,35 +16,142 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
-        <a class="navbar-brand"><img src="img/logo.png"></a>
-        <span class="navbar-text text-white font-weight-bold">Consulta Online</span>
-        <div class="header-icons">
-            <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
-            <span class="linedivide1"></span>
-            <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navBg">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <a class="navbar-text text-white font-weight-bold" href="#">Consulta Online</a>
+    <div class="header-icons">
+        <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
+        <span class="linedivide1"></span>
+        <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
 
-            <!--<a href="#" class="header-wrapicon1 dis-block text-white">Meus Horários</a>-->
-            <!--<span class="linedivide1"></span>-->
-            <!--<div class="header-wrapicon1 dis-block js-show-header-dropdown">-->
-            <!--<img src="img/user-log-in.png" class="header-icon1">-->
-            <!--</div>-->
+        <!--<a href="#" class="header-wrapicon1 dis-block text-white">Meus Horários</a>-->
+        <!--<span class="linedivide1"></span>-->
+        <!--<div class="header-wrapicon1 dis-block js-show-header-dropdown">-->
+        <!--<img src="img/user-log-in.png" class="header-icon1">-->
+        <!--</div>-->
 
-        </div>
-    </nav>
-
-    <div class="jumbotron">
-        <section class="p-t-1 p-b-1 flex-col-c-m">
-            <h2 class="l-texto t-center">
-                Cadastro
-            </h2>
-        </section>
     </div>
+</nav>
 
-    <!--<footer class="page-footer font-small bg-info bottom-full">-->
-    <!--<div class="card-footer">-->
-    <!--<div class="container text-center py-0">Protótipo de IHC</div>-->
-    <!--</div>-->
-    <!--</footer>-->
+<div class="jumbotron">
+    <section class="p-t-1 p-b-1 flex-col-c-m">
+        <h2 class="l-texto t-center">
+            Cadastro
+        </h2>
+    </section>
+</div>
+
+<div class="container m-t-61">
+    <form>
+        <div class="form-row pos-center">
+            <div class="col-sm-5">
+                <label>Nome</label>
+                <input type="text" class="form-control border" id="inputNome" placeholder="nome completo" required>
+            </div>
+            <div class="col-sm-3">
+                <label>CPF</label>
+                <input type="text" class="form-control border" id="inputCpf" placeholder="000.000.000-00" required>
+            </div>
+        </div>
+    </form>
+    <form class="m-t-23">
+        <div class="form-row pos-center">
+            <div class="col-sm-4">
+                <label>E-mail</label>
+                <input type="email" class="form-control border" id="inputEmail" placeholder="exemplo@gmail.com" required>
+            </div>
+            <div class="col-sm-2">
+                <label>Senha</label>
+                <input type="password" class="form-control border" id="inputSenha" placeholder="deve ter 8 letras" required>
+            </div>
+            <div class="col-sm-2">
+                <label>Confirmar senha</label>
+                <input type="password" class="form-control border" id="inputConfirmarSenha" placeholder="" required>
+            </div>
+        </div>
+    </form>
+    <form class="m-t-23">
+        <div class="form-row pos-center">
+            <div class="col-sm-5">
+                <label>Cidade</label>
+                <input type="text" class="form-control border" id="inputCidade" placeholder="ex: Lavras" required>
+            </div>
+            <div class="col-sm-2">
+                <label>CEP</label>
+                <input type="text" class="form-control border" id="inputCep" placeholder="ex: 00000-000" required>
+            </div>
+            <div class="col-sm-1">
+                <label>Estado</label>
+                <select id="inputEstado" class="form-control border" required>
+                    <option selected>MG</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <!--<option value="MG">MG</option>-->
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <form class="m-t-23">
+        <div class="form-row pos-center">
+            <div class="col-sm-4">
+                <label>Endereço</label>
+                <input type="text" class="form-control border" id="inputEndereco" placeholder="ex: Rua Acácias" required>
+            </div>
+            <div class="col-sm-1">
+                <label>Número</label>
+                <input type="text" class="form-control border" id="inputNumero" placeholder="ex: 0" required>
+            </div>
+            <div class="col-sm-3">
+                <label>Bairro</label>
+                <input type="text" class="form-control border" id="inputBairro" placeholder="ex: Jd Eldorado" required>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container m-t-55">
+    <form class="form-row pos-center">
+        <div class="col-sm-3">
+            <button class="btn btn-primary size2 bo-rad-15 hov5 m-text3 trans-0-4">Cadastrar-se</button>
+        </div>
+    </form>
+</div>
+
+<footer class="bg6 p-t-5 p-b-5 p-l-5 p-r-5 navbar-fixed-bottom" style="margin-top: 189px" id="footerBg">
+    <div class="t-center p-l-5 p-r-15">
+        <div class="t-center s-text8">
+            <p>Protótipo 1 de Interação Humano Computador</p>
+        </div>
+        <div class="t-center s-text8">
+            <p>Grupo 4</p>
+        </div>
+        <div class="t-center s-text8">
+            UFLA - 2018
+        </div>
+    </div>
+</footer>
 </body>
 </html>

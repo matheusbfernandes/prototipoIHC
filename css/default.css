@@ -19,3 +19,17 @@
 .form-control {
     border: 5px;
 }
+
+.signupCreate {
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+}
+
+#navBg {
+    background: #4285F4;
+}
+
+#footerBg {
+    background: #e9ecef;
+}

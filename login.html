@@ -16,38 +16,52 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
-        <a class="navbar-brand"><img src="img/logo.png"></a>
-        <span class="navbar-text text-white font-weight-bold">Consulta Online</span>
-        <div class="header-icons">
-            <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
-            <span class="linedivide1"></span>
-            <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
-        </div>
-    </nav>
-
-    <div class="jumbotron">
-        <section class="p-t-1 p-b-1 flex-col-c-m">
-            <h2 class="l-texto t-center">
-                Login
-            </h2>
-        </section>
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navBg">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <a class="navbar-text text-white font-weight-bold" href="#">Consulta Online</a>
+    <div class="header-icons">
+        <a href="#" class="header-wrapicon1 dis-block text-white">Login</a>
+        <span class="linedivide1"></span>
+        <a href="#" class="header-wrapicon1 dis-block text-white">Cadastre-se</a>
     </div>
+</nav>
 
-    <form>
-        <div class="form-group">
-            <label for="formGroupEmailinput">E-mail:</label>
-            <input type="text" class="form-control col-sm-5 border" id="formGroupEmailinput" placeholder="exemplo@gmail.com">
+<div class="jumbotron">
+    <section class="p-t-1 p-b-1 flex-col-c-m">
+        <h2 class="l-texto t-center">
+            Login
+        </h2>
+    </section>
+</div>
+
+<div class="container">
+    <div class="pos-center">
+        <form class="form-group">
+            <h4 class="m-text17 p-b-50 p-t-60">Entre com seus dados</h4>
+            <div class="m-b-20">
+                <input class="form-control border col-md-30" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="m-b-30">
+                <input class="form-control border col-md-30" type="password" name="senha" placeholder="Senha">
+            </div>
+            <button class="btn btn-primary size2 bo-rad-15 hov5 m-text3 trans-0-4">Logar</button>
+            <button class="btn btn-secondary size2 bo-rad-15 hov5 m-text3 trans-0-4 m-t-17">Esqueci minha senha</button>
+        </form>
+    </div>
+</div>
+
+<footer class="bg6 p-t-5 p-b-5 p-l-5 p-r-5 navbar-fixed-bottom" style="margin-top: 189px" id="footerBg">
+    <div class="t-center p-l-5 p-r-15">
+        <div class="t-center s-text8">
+            <p>Protótipo 1 de Interação Humano Computador</p>
         </div>
-        <div class="form-group justify-content-md-center">
-            <label for="formGroupPassword">Senha:</label>
-            <input type="password" class="form-control col-sm-5 border" id="formGroupPassword">
+        <div class="t-center s-text8">
+            <p>Grupo 4</p>
         </div>
-    </form>
-    <!--<footer class="page-footer font-small bg-info bottom-full">-->
-    <!--<div class="card-footer">-->
-    <!--<div class="container text-center py-0">Protótipo de IHC</div>-->
-    <!--</div>-->
-    <!--</footer>-->
+        <div class="t-center s-text8">
+            UFLA - 2018
+        </div>
+    </div>
+</footer>
 </body>
 </html>
